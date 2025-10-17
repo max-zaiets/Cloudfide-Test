@@ -1,26 +1,11 @@
-# Add Virtual Column 🧮
+# Add Virtual Column 
 
 A simple Python function that adds a new column to a DataFrame based on a math expression using existing columns.
-Made as a small test task for data analyst interview.
+Made as a small test task for data engineer interview.
 
 ---
 
-## 💡 Idea
-
-Sometimes you want to create a new column in a table using a formula — like `a + b * 2`.
-This function lets you do that safely and easily.
-
-It also checks that:
-
-* All column names are valid (only letters and `_`)
-* The formula (`role`) uses only existing columns and simple math symbols
-* The new column name is also valid
-
-If something is wrong — it just returns an empty DataFrame.
-
----
-
-## 🧩 Example
+## Example
 
 ```python
 import pandas as pd
@@ -47,7 +32,7 @@ Output:
 
 ---
 
-## ⚙️ Function logic (short version)
+##  Function logic (short version)
 
 ```python
 def add_virtual_column(df, role, new_column):
@@ -61,12 +46,8 @@ def add_virtual_column(df, role, new_column):
 
 ---
 
-## 🧠 Notes
+##  Notes
 
 * Only letters, `_`, `+`, `-`, `*`, `/`, and spaces are allowed in the formula
 * It uses `pandas.eval()` under the hood
 * If you mess up the expression or column names, it just gives back an empty DataFrame
-
----
-
-Made with ☕ and `pandas` ❤️
