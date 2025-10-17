@@ -32,7 +32,7 @@ Output:
 
 ---
 
-##  Function logic (short version)
+##  Function logic
 
 ```python
 def add_virtual_column(df, role, new_column):
